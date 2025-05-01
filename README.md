@@ -20,3 +20,13 @@ Add this package to your `pubspec.yaml` dependencies:
 dependencies:
   snake_border_loading:
     path: https://github.com/nodirbeksoliyev0811/snake_border_loading.git
+```
+or
+```yaml
+dependencies:
+  snake_border_loading: {last_version}
+```
+Terminal command:
+```
+flutter pub add snake_border_loading
+```
