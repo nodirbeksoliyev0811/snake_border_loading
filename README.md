@@ -19,4 +19,4 @@ Add this package to your `pubspec.yaml` dependencies:
 ```yaml
 dependencies:
   snake_border_loading:
-    path: path_to_your_package
+    path: https://github.com/nodirbeksoliyev0811/snake_border_loading.git
