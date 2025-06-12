@@ -19,7 +19,7 @@ class SnakeBorderPainter extends CustomPainter {
     final path = Path()..addRRect(RRect.fromRectAndRadius(Offset.zero & size, const Radius.circular(12)));
     final metric = path.computeMetrics().first;
     final length = metric.length;
-    double snakeLength = borderLength ?? 420.0;
+    double snakeLength = borderLength ?? 400.0;
     final double start = (animation.value * length) % length;
     const int steps = 250;
     for (int i = 0; i < steps; i++) {
