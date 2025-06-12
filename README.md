@@ -10,7 +10,7 @@ A customizable Flutter widget that adds an animated snake-style border around a 
 
 ## Preview
 
-> (Add a GIF or screenshot here if you have one)
+> 
 
 ## Installation
 
@@ -19,4 +19,14 @@ Add this package to your `pubspec.yaml` dependencies:
 ```yaml
 dependencies:
   snake_border_loading:
-    path: path_to_your_package
+    path: https://github.com/nodirbeksoliyev0811/snake_border_loading.git
+```
+or
+```yaml
+dependencies:
+  snake_border_loading: {last_version}
+```
+Terminal command:
+```
+flutter pub add snake_border_loading
+```

@@ -1,5 +1,3 @@
-library snake_border_loading;
-
 import 'package:flutter/material.dart';
 
 part 'snake_border_painter.dart';
