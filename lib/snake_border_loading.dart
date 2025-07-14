@@ -9,6 +9,7 @@ class SnakeBorderLoading extends StatefulWidget {
   final Offset? thickness;
   final double? length;
   final Duration? duration;
+  final Radius? radius;
 
   const SnakeBorderLoading({
     super.key,
@@ -19,6 +20,7 @@ class SnakeBorderLoading extends StatefulWidget {
     this.thickness,
     this.length,
     this.duration,
+    this.radius,
   });
 
   @override
@@ -52,12 +54,13 @@ class SnakeBorderLoadingState extends State<SnakeBorderLoading> with SingleTicke
     return CustomPaint(
       foregroundPainter: widget.isLoading
           ? SnakeBorderPainter(
-              animation: _controller,
-              borderBeginColor: widget.beginColor,
-              borderEndColor: widget.endColor,
-              borderLength: widget.length,
-              borderWidth: widget.thickness,
-            )
+        animation: _controller,
+        borderBeginColor: widget.beginColor,
+        borderEndColor: widget.endColor,
+        borderLength: widget.length,
+        borderWidth: widget.thickness,
+        radius: widget.radius,
+      )
           : null,
       child: widget.child,
     );

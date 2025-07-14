@@ -1,10 +1,7 @@
-# Changelog
+## 0.0.2
 
-All notable changes to this project will be documented in this file.
+- pub-dev package preview fixed
 
-## [0.0.1] -  01.05.2025
-### Added
-- Loading snake animation add.
-- 
-### Changed
-- No change.
+## 0.0.1
+
+- Initial release

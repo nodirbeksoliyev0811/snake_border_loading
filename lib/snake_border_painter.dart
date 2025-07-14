@@ -5,6 +5,7 @@ class SnakeBorderPainter extends CustomPainter {
   final Color? borderBeginColor, borderEndColor;
   final Offset? borderWidth;
   final double? borderLength;
+  final Radius? radius;
 
   SnakeBorderPainter({
     required this.animation,
@@ -12,11 +13,12 @@ class SnakeBorderPainter extends CustomPainter {
     this.borderEndColor,
     this.borderWidth,
     this.borderLength,
+    this.radius,
   }) : super(repaint: animation);
 
   @override
   void paint(Canvas canvas, Size size) {
-    final path = Path()..addRRect(RRect.fromRectAndRadius(Offset.zero & size, const Radius.circular(12)));
+    final path = Path()..addRRect(RRect.fromRectAndRadius(Offset.zero & size, radius ?? const Radius.circular(12)));
     final metric = path.computeMetrics().first;
     final length = metric.length;
     double snakeLength = borderLength ?? 400.0;
