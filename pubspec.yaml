@@ -2,6 +2,8 @@ name: snake_border_loading
 description: "Flutter Package: Snake Border Loading"
 version: 0.0.1
 homepage: "https://github.com/nodirbeksoliyev0811/snake_border_loading.git"
+repository: "https://github.com/nodirbeksoliyev0811/snake_border_loading"
+issue_tracker: "https://github.com/nodirbeksoliyev0811/snake_border_loading/issues"
 
 environment:
   sdk: ^3.5.4
@@ -10,7 +12,6 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_lints: ^5.0.0
 
 dev_dependencies:
   flutter_test:
